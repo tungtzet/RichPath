@@ -103,7 +103,7 @@ object PathUtils {
         PathDataNode.nodesToPath(pathDataNodes, path)
     }
 
-    fun isTouched(path: Path, x: Float, y: Float): Boolean {
+    @JvmStatic fun isTouched(path: Path, x: Float, y: Float): Boolean {
         val rectF = RectF()
         path.computeBounds(rectF, true)
         val region = Region().apply {
